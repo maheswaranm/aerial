@@ -38,7 +38,7 @@
 						<nav>
 							<ul>
 									{{ range .Site.Params.links }}
-									<li><a href="{{ .link | safeURL }}" target="_blank" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
+									<li><a href="{{ .link | safeURL }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
 									{{ end }}
 									{{ range .Site.Params.aboutpage }}
 									<li><a href="{{ .link | safeURL }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
